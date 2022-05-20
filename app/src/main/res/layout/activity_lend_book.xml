@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LendBookActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-3dp">
+
+    <TextView
+        android:id="@+id/textView_bkState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="17dp"
+        android:text="书籍状态："
+        app:layout_constraintBaseline_toBaselineOf="@+id/content_bkState"
+        app:layout_constraintEnd_toStartOf="@+id/content_bkState"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/content_bkAuthor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="18dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintBottom_toTopOf="@+id/content_bkPress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewbkAuthor"
+        app:layout_constraintTop_toBottomOf="@+id/content_bkName" />
+
+    <TextView
+        android:id="@+id/content_bkPages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="14dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintBottom_toTopOf="@+id/content_bkPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewbkPages"
+        app:layout_constraintTop_toBottomOf="@+id/content_bkDatePress" />
+
+    <TextView
+        android:id="@+id/content_bkPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="17dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintBottom_toTopOf="@+id/content_bkDateln"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewbkPrice"
+        app:layout_constraintTop_toBottomOf="@+id/content_bkPages" />
+
+    <TextView
+        android:id="@+id/content_bkID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="25dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintBottom_toTopOf="@+id/content_bkName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewbkID"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewbkPages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="16dp"
+        android:text="书籍页数："
+        app:layout_constraintBottom_toBottomOf="@+id/content_bkPages"
+        app:layout_constraintEnd_toStartOf="@+id/content_bkPages"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/content_bkDateln"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="16dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintBottom_toTopOf="@+id/content_bkState"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewbkDateln"
+        app:layout_constraintTop_toBottomOf="@+id/content_bkPrice" />
+
+    <TextView
+        android:id="@+id/textViewbkName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="16dp"
+        android:text="书籍名称："
+        app:layout_constraintBottom_toBottomOf="@+id/content_bkName"
+        app:layout_constraintEnd_toStartOf="@+id/content_bkName"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/content_bkPress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="12dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintBottom_toTopOf="@+id/content_bkDatePress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewbkPress"
+        app:layout_constraintTop_toBottomOf="@+id/content_bkAuthor" />
+
+    <TextView
+        android:id="@+id/content_bkDatePress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="18dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintBottom_toTopOf="@+id/content_bkPages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewbkDatePress"
+        app:layout_constraintTop_toBottomOf="@+id/content_bkPress" />
+
+    <TextView
+        android:id="@+id/textViewbkPress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="16dp"
+        android:text="书籍出版社："
+        app:layout_constraintBottom_toBottomOf="@+id/content_bkPress"
+        app:layout_constraintEnd_toStartOf="@+id/content_bkPress"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonlendbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="99dp"
+        android:enabled="false"
+        android:text="借书"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/content_bkBrief" />
+
+    <TextView
+        android:id="@+id/textViewbkAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="16dp"
+        android:text="书籍作者："
+        app:layout_constraintBottom_toBottomOf="@+id/content_bkAuthor"
+        app:layout_constraintEnd_toStartOf="@+id/content_bkAuthor"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/content_bkBrief"
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="26dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintBottom_toTopOf="@+id/buttonlendbook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewbkBrief"
+        app:layout_constraintTop_toBottomOf="@+id/content_bkState" />
+
+    <TextView
+        android:id="@+id/content_bkName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="18dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintBottom_toTopOf="@+id/content_bkAuthor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewbkName"
+        app:layout_constraintTop_toBottomOf="@+id/content_bkID" />
+
+    <TextView
+        android:id="@+id/textViewbkDateln"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="16dp"
+        android:text="书籍入库时间："
+        app:layout_constraintBottom_toBottomOf="@+id/content_bkDateln"
+        app:layout_constraintEnd_toStartOf="@+id/content_bkDateln"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewbkID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="17dp"
+        android:text="书籍编号："
+        app:layout_constraintBottom_toBottomOf="@+id/content_bkID"
+        app:layout_constraintEnd_toStartOf="@+id/content_bkID"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/content_bkState"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="16dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintBottom_toTopOf="@+id/content_bkBrief"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_bkState"
+        app:layout_constraintTop_toBottomOf="@+id/content_bkDateln" />
+
+    <TextView
+        android:id="@+id/textViewbkBrief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="17dp"
+        android:text="书籍简介："
+        app:layout_constraintBaseline_toBaselineOf="@+id/content_bkBrief"
+        app:layout_constraintEnd_toStartOf="@+id/content_bkBrief"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewbkPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="16dp"
+        android:text="书籍价格："
+        app:layout_constraintBottom_toBottomOf="@+id/content_bkPrice"
+        app:layout_constraintEnd_toStartOf="@+id/content_bkPrice"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewbkDatePress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="17dp"
+        android:text="书籍出版时间："
+        app:layout_constraintEnd_toStartOf="@+id/content_bkDatePress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewbkPress" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="142dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

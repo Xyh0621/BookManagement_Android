@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <TextView
+        android:id="@+id/rdEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="读者电话："
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewbkBrief7"
+        app:layout_constraintTop_toBottomOf="@+id/textViewbkBrief6" />
+
+    <TextView
+        android:id="@+id/rdName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="读者电话："
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewbkBrief3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewbkBrief2" />
+
+    <TextView
+        android:id="@+id/rdType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="读者电话："
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewbkBrief5"
+        app:layout_constraintTop_toBottomOf="@+id/textViewbkBrief4" />
+
+    <TextView
+        android:id="@+id/textViewbkBrief2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="读者编号："
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rdID"
+        app:layout_constraintEnd_toEndOf="@+id/textViewbkBrief7"
+        app:layout_constraintStart_toStartOf="@+id/textViewbkBrief7" />
+
+    <TextView
+        android:id="@+id/rdSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="读者电话："
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewbkBrief4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewbkBrief3" />
+
+    <TextView
+        android:id="@+id/rdBookNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="读者电话："
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewbkBrief9"
+        app:layout_constraintTop_toBottomOf="@+id/textViewbkBrief8" />
+
+    <TextView
+        android:id="@+id/textViewbkBrief8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="读者办证日期："
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rdDateReg"
+        app:layout_constraintEnd_toEndOf="@+id/textViewbkBrief9" />
+
+    <TextView
+        android:id="@+id/rdID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:text="读者电话："
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewbkBrief2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rdPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="读者电话："
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewbkBrief6"
+        app:layout_constraintTop_toBottomOf="@+id/textViewbkBrief5" />
+
+    <TextView
+        android:id="@+id/textViewbkBrief5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="读者类型："
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rdType"
+        app:layout_constraintStart_toStartOf="@+id/textViewbkBrief4" />
+
+    <TextView
+        android:id="@+id/rdDateReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="读者电话："
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewbkBrief8"
+        app:layout_constraintTop_toBottomOf="@+id/textViewbkBrief7" />
+
+    <TextView
+        android:id="@+id/textViewbkBrief7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="读者邮箱："
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rdEmail"
+        app:layout_constraintEnd_toEndOf="@+id/textViewbkBrief8" />
+
+    <TextView
+        android:id="@+id/textViewbkBrief3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="读者姓名："
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rdName"
+        app:layout_constraintStart_toStartOf="@+id/textViewbkBrief2" />
+
+    <TextView
+        android:id="@+id/textViewbkBrief9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:gravity="center"
+        android:text="读者已借书籍数："
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rdBookNum"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewbkBrief4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="读者性别："
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rdSex"
+        app:layout_constraintStart_toStartOf="@+id/textViewbkBrief3" />
+
+    <TextView
+        android:id="@+id/textViewbkBrief6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="读者电话："
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rdPhone"
+        app:layout_constraintStart_toStartOf="@+id/textViewbkBrief5" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="修改信息"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="@+id/textViewbkBrief9" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="45dp"
+        android:text="注销登录"
+        app:layout_constraintStart_toStartOf="@+id/rdBookNum"
+        app:layout_constraintTop_toBottomOf="@+id/rdBookNum" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
